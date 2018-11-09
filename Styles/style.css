@@ -22,6 +22,7 @@ h2{
   line-height: 1.43;
   text-align: left;
   color: #323232;
+  margin-bottom: 25px;
 }
 
 form {}
@@ -61,7 +62,13 @@ dt{
   line-height: 1.56;
   text-align: left;
   color: #323232;
+  margin-left: 52px;
 }
+
+dd{
+	margin-left: 52px;
+	margin-bottom: 48px;
+	}
 
 .main-navigation li {
 	display: inline;
@@ -109,3 +116,9 @@ dt{
 	font-weight: bold;
 	color: #0199e6;
 }
+
+.gray-section {
+	background-color: #f7f8fa;
+	} 
+
+.center-align {text-align: center;}	
