@@ -63,6 +63,12 @@ dt{
   color: #323232;
 }
 
+.main-navigation li {
+	display: inline;
+	padding left: 15px;
+	padding-right: 15px;
+}
+
 .submitbtn{
 	background-color: #008ed6;
 	font-size: 16px;
