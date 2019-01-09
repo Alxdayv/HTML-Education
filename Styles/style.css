@@ -6,6 +6,10 @@ html {
 	color: #727272;
 }
 
+body{
+    margin: 0px;
+}
+
 h3 {
 	font-size: 20px;
 	font-weight: 300;
@@ -13,7 +17,8 @@ h3 {
 	text-align: center;
 	line-height: 1;
 }
- h3.lid {margin-top: 45px}
+ h3.lid {margin-top: 45px;
+ 	   line-height: 1.5;}
 
 h2{
   font-family: 'Open Sans', sans-serif;
@@ -65,13 +70,28 @@ input{
 	border: solid 1px rgba(1, 153, 230, 0.3);
 	background-color: #000000;
 }
-.discription {
-  font-size: 16px;
-  line-height: 1.88;
-  text-align: left;
-  color: #ffffff;
-  float: right;
 
+.discription_form{
+	display: flex;
+	flex-direction: row;
+}
+
+.discription {
+	margin-top: 27px;
+	font-size: 16px;
+	text-align: left;
+	color: #ffffff;
+/*  float: right;
+		line-height: 1.88;	*/
+}
+
+.discription_img{
+	margin-left: 12px;
+	margin-top: 11px;
+	height: 26px;
+	width: 34px;
+	background-image: url(../img/arrow01.svg);
+	background-repeat: no-repeat;
 }
 
 hr{
@@ -115,11 +135,11 @@ a {text-decoration: none;}
 	float: right;
 }
 
-.clearfix{
+/*.clearfix{
 	content: "";
 	display: table;
 	clear: both;
-}
+}*/
 
 .nav {
   text-transform: uppercase;
@@ -130,6 +150,10 @@ a {text-decoration: none;}
   color: #323232;
   padding-top: 33px;
   padding-bottom: 33px;
+}
+
+.nav:hover {
+	  color: #0199e6;
 }
 
 .headcontainer{
@@ -159,6 +183,7 @@ a {text-decoration: none;}
 
 .container-flex{
 	display: flex;
+	flex-shrink: 0;
 	border-top: 1px solid transparent;
 	width: 1170px;
 	margin-left: auto;
@@ -190,6 +215,10 @@ a {text-decoration: none;}
 .selection-h2 {
 	font-weight: bold;
 	color: #0199e6;
+}
+
+.selection-h2-white {
+	font-weight: bold;
 }
 
 .gray-section {
@@ -238,8 +267,9 @@ width: 358px;}
 }
 
 .features-item {
-	/*float: left;*/
-	width: 360px;
+	/*float: left;
+		width: 360px;*/
+	flex-basis: 550px;
 	text-align: center;
 	margin:50px 15px;
 }
