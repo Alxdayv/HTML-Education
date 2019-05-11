@@ -1,0 +1,26 @@
+
+div:nth-of-type(odd)::before
+{
+	content: '.' attr(class)'_';
+	color: #FFFFFFFF;
+	background: #0094FFFF;
+}
+
+div:nth-of-type(odd){
+	outline: 1px dashed #0094FFFF;
+	background-color: #0094FF3A;
+}
+
+
+
+div:nth-of-type(even)::before
+{
+	content: '.' attr(class)'_';
+	color: #FFF;
+	background: #2CC827FF;
+}
+
+div:nth-of-type(even){
+	outline: 1px dashed #2CC827FF;
+	background-color: #4CFF0038;
+}
